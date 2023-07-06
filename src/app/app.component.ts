@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'first_course_project';
+  selectedMenu : string;
+
+  onSelectedMenu(selectedMenu : string){
+    this.selectedMenu = selectedMenu;
+
+  }
 }
