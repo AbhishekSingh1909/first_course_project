@@ -6,10 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  selectedMenu : string;
+  loadedFeature = 'recipe';
 
-  onSelectedMenu(selectedMenu : string){
-    this.selectedMenu = selectedMenu;
+  onNavigate (featured : string)
+  {
+    this.loadedFeature = featured;
 
   }
 }
