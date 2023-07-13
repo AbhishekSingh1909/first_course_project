@@ -14,7 +14,7 @@ export class ShoppingListService {
   }
 
   addIngredients(ingredient: Ingredient[]) {
-    //spread operator use to assign array elements into a array because push does not assign array to another array.
+    //spread operator use to assign array elements into an array because push does not assign array to another array.
     this.ingredients.push(...ingredient);
 
     // do group by and sum of values
@@ -27,6 +27,7 @@ export class ShoppingListService {
         result.push(res[value.name]);
       }
       res[value.name].amount += value.amount;
+
       return res;
     }, {});
     console.log(r);
