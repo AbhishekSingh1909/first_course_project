@@ -29,6 +29,11 @@ export class RecipeService implements OnInit {
     return this.recipes.slice();
   }
 
+  getRecipe(index: number) {
+    return Object.assign({}, this.recipes[index]);
+    // return this.recipes[index];
+  }
+
   selectRecipe(recipe) {
     this.selectedRecipe = recipe;
   }
